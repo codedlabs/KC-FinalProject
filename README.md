@@ -5,6 +5,8 @@
 
 
 ## خطوات المشروع
+  <div dir="rtl">
+
 
 1.  قم بعمل Fork لهذا المجلد و clone وافتح المجلد من خلال Github Desktop
 
