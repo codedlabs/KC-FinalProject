@@ -1,7 +1,6 @@
 body{
     color: #A3B18A;
     scroll-behavior: smooth;
-    /* padding: 0%; */
     margin: 0px;
     font-family: 'Mouse Memoirs', sans-serif;
     font-family: 'Playfair Display', serif;
@@ -17,7 +16,8 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
+    padding: 15px;
 }
 .left{
     display: flex;
