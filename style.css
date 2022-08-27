@@ -1,5 +1,6 @@
 body{
-    color: #A3B18A;
+    color: #DAD7CD;
+    background-color: #DAD7CD;
     scroll-behavior: smooth;
     margin: 0px;
     font-family: 'Mouse Memoirs', sans-serif;
@@ -16,8 +17,9 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-between;
+    justify-content: center;
     padding: 15px;
+    /* box-shadow: 20px 20px 50px grey; */
 }
 .left{
     display: flex;
@@ -32,4 +34,71 @@ body{
     align-items: center;
     justify-content: center;
 
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #3A5A40;
+    box-shadow: 12px 12px 12px #DAD7CD;
+    width: 100%;
+    z-index: 1;
+  }
+  
+
+#navbar a {
+    float: left;
+    color: #DAD7CD;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+#navbar a:hover {
+    background-color: #A3B18A;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  } 
+  .footer{
+    height: 130px;
+    width:100%;
+    background-color: #3A5A40;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #DAD7CD;
+
+ }
+ .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+ }
+ .container a{
+    text-decoration: none;
+ }
+
+ .box{
+    width:300px;
+    height:400px;
+    background-color: #A3B18A;
+    color: #DAD7CD;
+    padding: 10px;
+    box-shadow: 10px 10px 5px #202020a5;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+  
+}
+.box img{
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #202020a5;
 }
