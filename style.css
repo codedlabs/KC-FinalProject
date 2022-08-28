@@ -1,5 +1,5 @@
 body{
-    color: #344E41;
+    color: #DAD7CD;
     background-color: #A3B18A;
     scroll-behavior: smooth;
     margin: 0px;
@@ -7,17 +7,18 @@ body{
     font-family: 'Playfair Display', serif;
     font-family: 'Roboto Condensed', sans-serif;
     font-family: 'Tiro Gurmukhi', serif;
+    
 }
 
 
 .header{
     width: 100%;
-    height: 100px;
+    height: 45px;
     background-color:#3A5A40;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:left;
     padding: 15px;
     color: #DAD7CD;
     font-size: larger;
@@ -39,40 +40,22 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-
+}
+.right h2{
+    margin-top: 45px;
 
 }
 
-#navbar {
-    overflow: hidden;
-    background-color: #3A5A40;
-    width: 100%;
-    z-index: 1;
-  }
-  
 
-#navbar a {
-    float: left;
-    color: #DAD7CD;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-#navbar a:hover {
-    background-color: #A3B18A;
-    border-radius: 5px;
-    color: #000000;
-  }
   
 
   .footer{
-    height: 220px;
+    height: 100px;
     width:100%;
     background-color: #3A5A40;
     margin: 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     color: #DAD7CD;
@@ -84,6 +67,22 @@ body{
  .footer h5{
     margin: 5px;
  }
+ 
+.footer a {
+    float: left;
+    color: #DAD7CD;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.footer a:hover {
+    background-color: #A3B18A;
+    border-radius: 5px;
+    color: #000000;
+  }
+  
+
  .container{
     display: flex;
     flex-direction: column;
@@ -92,13 +91,14 @@ body{
     flex-wrap: wrap;
     height: 100vh;
     padding: 0px;
+
  }
  .container a{
     text-decoration: none;
  }
 
  .box{
-    width: 600px;
+    width: 550px;
     height: 510px;
     background-color:#ebe6cd;
     color: #344E41 ;
@@ -112,10 +112,142 @@ body{
 }
 .box img{
     
-    width:600px;
-    height:250px;
+    width:550px;
+    height: 500px;
     border-radius: 10px;
 }
 .center{
     text-align: center;
 }
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #3A5A40;
+    overflow-x: hidden;
+    padding-top: 20px;
+    /* box-shadow: 10px 10px 5px #202020a5; */
+
+  }
+  .sidenav h2{
+    margin-left:20px ;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #DAD7CD;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #262626;
+
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: #344E41;
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #A3B18A;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  
+  /* Some media queries for responsiveness */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+ .flip-card {
+    background-color: transparent;
+    width: 550px;
+    height: 510px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    cursor: pointer;
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    color: black;
+  }
+  .flip-card-front a{
+    text-decoration: none;
+  }
+  .flip-card-back {
+    background-color: #ebe6cd;
+    color: #344E41;
+    border-radius: 20px;
+    transform: rotateY(180deg);
+    box-shadow: 10px 10px 5px #202020a5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .cardd{
+    display: flex;
+  }
+  .centered-img{
+    position: relative;
+    text-align: center;
+  }
+  .img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #DAD7CD;
+    font-weight: bolder;
+  }
