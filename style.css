@@ -3,11 +3,11 @@ body{
     background-color: #A3B18A;
     scroll-behavior: smooth;
     margin: 0px;
-    /* font-family: 'Mouse Memoirs', sans-serif; */
-    font-family: 'Playfair Display', serif;
+    font-family: 'Mouse Memoirs', sans-serif;
+    /* font-family: 'Playfair Display', serif;
     font-family: 'Roboto', sans-serif;
-    /* font-family: 'Roboto Condensed', sans-serif; */
-    /* font-family: 'Tiro Gurmukhi', serif; */
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Tiro Gurmukhi', serif; */
     
 }
 
@@ -45,7 +45,6 @@ body{
     justify-content: center;
     flex-wrap: wrap;
 }
-
 
 
   
@@ -119,7 +118,7 @@ body{
 }
 .sidenav {
     height: 100%;
-    width: 200px;
+    width: 150px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -155,13 +154,12 @@ body{
   }
   
   .main {
-    margin-left: 200px; 
+    margin-left: 150px; 
     font-size: 20px; 
     padding: 0px;
   }
    .dropdown-btn{
-    font-family: 'Playfair Display', serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Mouse Memoirs', sans-serif;
    }
  
   .active {
@@ -256,4 +254,16 @@ body{
     color: #DAD7CD;
     font-weight: bolder;
      margin-top: 100px;
-   }
+     font-size:x-large;
+     animation-name: mymove;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+  }
+
+
+#div4 {animation-timing-function: ease-out;}
+
+@keyframes mymove {
+  from {left: 150px;}
+  to {left: 570px;}
+}
