@@ -276,4 +276,43 @@ body{
   flex-direction: column;
   border-radius: 10px;
   border: 2px solid #3D550C;
+  text-align: center;
+  margin: auto;
+}
+.newsletterbox h1{
+margin-bottom: 80px;
+margin-top: 20px;
+font-size: 50px;
+}
+.newsletterbox h2{
+  margin-bottom: 40px;
+}
+#newsbtn{
+  width: 150px;
+  height: 50px;
+  background-color: #3D550C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  font-family: 'Mouse Memoirs', sans-serif;
+  transition: 0.3s ease-in-out;
+}
+#newsbtn:hover{
+  background-color: #3D550C;
+  color: white;
+  width: 160px;
+  height: 60px;
+}
+.field{
+ margin: auto;
+  width: 80%;
+  display: grid;
+}
+.label{
+  font-size: 25px;
+}
+.input{
+  height: 50px;
+outline: none;
 }

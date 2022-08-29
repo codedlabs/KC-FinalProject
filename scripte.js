@@ -64,7 +64,7 @@ infocard2.forEach(x => {
     </div></a> `
 });
 
-
+let submit = document.getElementById('newsbtn')
 
 
  
