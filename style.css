@@ -5,7 +5,7 @@ body{
     margin: 0px;
     font-family: 'Mouse Memoirs', sans-serif;
     animation-name: opacity;
-    animation-duration: 3s;
+    animation-duration: 2s;
   }
   
   @keyframes opacity {
