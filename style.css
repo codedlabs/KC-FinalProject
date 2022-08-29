@@ -1,6 +1,6 @@
 body{
-    color: #DAD7CD;
-    background-color: #A3B18A;
+    color: white;
+    background-color: #f9ffc4;
     scroll-behavior: smooth;
     margin: 0px;
     font-family: 'Mouse Memoirs', sans-serif;
@@ -17,13 +17,13 @@ body{
 .header{
     width: 100%;
     height: 45px;
-    background-color:#3A5A40;
+    background-color: #59981A;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content:left;
     padding: 15px;
-    color: #DAD7CD;
+    color: white;
     font-size: larger;
     box-shadow: 0px 10px 5px #202020a5;
   
@@ -54,12 +54,12 @@ body{
   .footer{
     height: 60px;
     width:100%;
-    background-color: #3A5A40;
+    background-color: #59981A;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: #DAD7CD;
+    color: white;
     padding: 10px;
     font-size: large;
 
@@ -69,16 +69,16 @@ body{
  
 .footer a {
     float: left;
-    color: #DAD7CD;
+    color:white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
 }
 .footer a:hover {
-    background-color: #A3B18A;
+    background-color: #81B622;
     border-radius: 5px;
-    color: #000000;
+    color: #ffff;
   }
   
 
@@ -99,8 +99,8 @@ body{
  .box{
     width: 500px;
     height: 460px;
-    background-color:#ebe6cd;
-    color: #344E41 ;
+    background-color:#81B622;
+    color: white;
     padding: 10px;
     box-shadow: 0px 10px 5px #202020a5;
     display:flex;
@@ -125,7 +125,7 @@ body{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #3A5A40;
+    background-color: #59981A;
     overflow-x: hidden;
     padding-top: 20px;
 
@@ -139,7 +139,7 @@ body{
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
-    color: #DAD7CD;
+    color: white;
     display: block;
     border: none;
     background: none;
@@ -151,7 +151,7 @@ body{
   
   
   .sidenav a:hover, .dropdown-btn:hover {
-    color: #344E41;
+    color: #3D550C;
 
   }
   
@@ -165,13 +165,14 @@ body{
    }
  
   .active {
-    background-color: #344E41;
+    background-color: #3D550C;
     color: white;
   }
   
   .dropdown-container {
     display: none;
-    background-color: #A3B18A;
+    background-color: #81B622;
+    color: #344E41;
     padding-left: 8px;
   }
   
@@ -222,8 +223,8 @@ body{
     text-decoration: none;
   }
   .flip-card-back {
-    background-color: #ebe6cd;
-    color: #344E41;
+    background-color: #81B622;
+    color: white;
     border-radius: 20px;
     transform: rotateY(180deg);
     box-shadow: 0px 10px 5px #202020a5;
@@ -244,10 +245,10 @@ body{
 
   .img-text {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 44%;
     transform: translate(-50%, -50%);
-    color: #DAD7CD;
+      color: white;
     font-weight: bolder;
      margin-top: 100px;
      font-size:x-large;
