@@ -255,6 +255,7 @@ body{
      animation-name: mymove;
      animation-duration: 3s;  
     animation-fill-mode: forwards;
+    
   }
 
 
@@ -304,15 +305,24 @@ font-size: 50px;
   width: 160px;
   height: 60px;
 }
-.field{
- margin: auto;
-  width: 80%;
-  display: grid;
-}
+
 .label{
-  font-size: 25px;
+  font-size: 30px;
+  margin: auto;
+  height: 50px;
+  letter-spacing: 2px;
+  width: 700px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
 }
 .input{
   height: 50px;
-outline: none;
-}
+  outline: none;
+  width: 600px;
+  margin-bottom: 30px;
+  border: none;
+  padding: 0;
+  padding-left: 20px;
+ 
+} 
