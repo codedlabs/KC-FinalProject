@@ -15,8 +15,8 @@ for (i = 0; i < dropdown.length; i++) {
 }
 
 let infocard1 = [
-{title:'Climbers Plants',img:'./picturs/climbers.jpg',p:'Climbers are plants with long, flexible, climbing stems that are rooted in the ground, and usually have long dangling branches. They are easy to take car of as long as they are cared for and supported. Most climbing plants including vines, ivy and other flowering varieties are very hardy and adaptable. They can be grown in a garden bed, or even in a narrow pot! Some vines are so adaptable that they can be grown without framework or supporting wires. They need full sun to partial shade and any soil conditions is good for them.'},
-{title:'Bulb Plants',img:'./picturs/bulbs.jpg',p:'The definition of a bulb is any plant that stores its complete life cycle in an underground storage structure,  such as the lily, onion, hyacinth, or tulip. They have a period of growth and flowering. Bulbs are among the easiest group of plants to grow and care for. They can be grown either outdoor or indoor depending on the plant. Most of them do best in full sun (at least 6 hours a day of direct sun) and well-drained soil.'},
+{title:'Climbers Plants',img:'./picturs/climbers.jpg',p:'Climbers are plants with long, flexible, climbing stems that are rooted in the ground, and usually have long dangling branches. They are easy to take car of as long as they are cared for and supported. Most climbing plants including vines, ivy and other flowering varieties are very hardy and adaptable. They can be grown in a garden bed, or even in a narrow pot! Some vines are so adaptable that they can be grown without framework or supporting wires. They need full sun to partial shade and any soil conditions is good for them.',page:'climbers'},
+{title:'Bulb Plants',img:'./picturs/bulbs.jpg',p:'The definition of a bulb is any plant that stores its complete life cycle in an underground storage structure,  such as the lily, onion, hyacinth, or tulip. They have a period of growth and flowering. Bulbs are among the easiest group of plants to grow and care for. They can be grown either outdoor or indoor depending on the plant. Most of them do best in full sun (at least 6 hours a day of direct sun) and well-drained soil.',page:'BulbPlants'},
 ]
 
 let infocard2 = [
@@ -29,7 +29,7 @@ let infocards2 = document.getElementById(`infocards2`)
 
 
 infocard1.forEach(x => {
-  infocards1.innerHTML += `<a href="./${x.title}.html">
+  infocards1.innerHTML += `<a href="./${x.page}.html">
 <div class="flip-card">
     <div class="flip-card-inner">
     <div class="flip-card-front">
