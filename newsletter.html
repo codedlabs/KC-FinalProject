@@ -10,6 +10,7 @@
     <title>News Letter</title>
     <link rel="icon" href="./picturs/newsicon.png">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -28,6 +29,7 @@
 
           <form action="https://formsubmit.co/sara0moha78@gmail.com" method="POST">
             <h1>Join The Little Leaf Family! </h1>
+            <img src="./picturs/sh.png" width="80px">
           <h2>Discover the joy of growing your own plants and edible crops! <br> Once you sign up for the Little Leaf weekly newsletter you will begin receiving the best expert information, tips, tricks, lessons-learned, and so much more. <br>
             We will provide you with everything you need to know, including information on soil, composting, mulch, irrigation, pests, fertilizers, diseases, flowers and vegetables. </h2>
         
@@ -37,7 +39,7 @@
             <label class="label" for="email">EMAIL:</label>
             <input type="email" name="email"  placeholder="Enter Your Email" class="input" required>
         <br>
-            <button type="submit" id="newsbtn" >Subscribe</button>
+            <button type="submit" id="newsbtn" class="hvr-grow" >Subscribe</button>
        
        </form>
         </div>
@@ -50,6 +52,23 @@
             <a href="./main.html">Go To The Main Page</a>
         </div>
     </div>
-  
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.getElementById("newsbtn").addEventListener("click", function () {
+            Swal.fire({
+          text: "We Will Send You Your Letter Every Sunday ",
+          title: "Thank You For Joining The Little Leaf Family!",
+          showConfirmButton: true,
+          confirmButtonColor: "#3D550C",
+          color: "#59981A",
+          background: "white",
+          backdrop:"#00000077",
+          imageUrl: "https://media3.giphy.com/media/IbsQ8L4PTQ53SH7FnL/giphy.gif",
+          imageWidth: 200,
+          imageHeight: 200,
+        });
+
+});
+    </script>
 </body>
 </html>

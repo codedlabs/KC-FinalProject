@@ -63,20 +63,3 @@ infocard2.forEach(x => {
     </div>       
     </div></a> `
 });
-
-
-//  function btn(){
-  
-//   let submit = document.getElementById('btn1')
-//   submit.innerHTML = `<h1> Thank You For Joining The Little Leaf Family!</h1>`
-//  }
-
- document.getElementById("newsbtn").addEventListener("click", function () {
-  Swal.fire({
-    text: "We Will Contact You ",
-    title: "Thank You For Joining The Little Leaf Family!",
-    showConfirmButton: true,
-    confirmButtonColor: "#344e41",
-    color: "#53c78d",
-  });
-});

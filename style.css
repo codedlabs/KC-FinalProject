@@ -25,7 +25,7 @@ body{
     padding: 15px;
     color: white;
     font-size: larger;
-    box-shadow: 0px 10px 5px #202020a5;
+    box-shadow: 0px 10px 5px #20202071;
   
 }
 .left{
@@ -266,9 +266,9 @@ body{
   to {left: 570px;}
 }
 .newsletterbox{
-  width: 650px;
-  height: 750px;
-  background-color:#81B622;
+  width: 600px;
+  height: 700px;
+  background-color:#59981A;
   color: white;
   padding: 10px;
   box-shadow: 0px 10px 5px #202020a5;
@@ -276,12 +276,11 @@ body{
   align-items: center;
   flex-direction: column;
   border-radius: 10px;
-  border: 2px solid #3D550C;
   text-align: center;
   margin: auto;
 }
 .newsletterbox h1{
-margin-bottom: 80px;
+margin-bottom: 30px;
 margin-top: 20px;
 font-size: 50px;
 }
@@ -302,8 +301,6 @@ font-size: 50px;
 #newsbtn:hover{
   background-color: #3D550C;
   color: white;
-  width: 160px;
-  height: 60px;
 }
 
 .label{
@@ -314,12 +311,12 @@ font-size: 50px;
   width: 700px;
   font-weight: bolder;
   text-transform: uppercase;
-  text-align: center;
+  text-align:center;
 }
 .input{
   height: 50px;
   outline: none;
-  width: 600px;
+  width: 550px;
   margin-bottom: 30px;
   border: none;
   padding: 0;
