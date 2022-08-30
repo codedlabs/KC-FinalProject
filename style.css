@@ -119,26 +119,48 @@ body{
     text-align: center;
 }
 .sidenav {
-    height: 100%;
-    width: 150px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #59981A;
-    overflow-x: hidden;
-    padding-top: 20px;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #59981A;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
 
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
 
-  }
-  .sidenav h2{
-    margin-left:20px ;
-  }
+.sidenav a:hover {
+  color: #3D550C;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
   
-  .sidenav a, .dropdown-btn {
+ .dropdown-btn {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     color: white;
     display: block;
     border: none;
@@ -149,17 +171,17 @@ body{
     outline: none;
   }
   
-  
-  .sidenav a:hover, .dropdown-btn:hover {
+  .dropdown-btn:hover{
     color: #3D550C;
 
   }
   
-  .main {
-    margin-left: 150px; 
-    font-size: 20px; 
-    padding: 0px;
+   .dropdown-btn a:hover{
+    color: #3D550C;
+
   }
+  
+
    .dropdown-btn{
     font-family: 'Mouse Memoirs', sans-serif;
    }
@@ -233,6 +255,7 @@ body{
     justify-content: center;
     flex-direction: column;
     padding: 20px;
+    font-size: 25px;
   }
   .cardd{
     display: flex;
@@ -253,17 +276,15 @@ body{
      margin-top: 100px;
      font-size:x-large;
      animation-name: mymove;
-     animation-duration: 3s;  
+     animation-duration: 1.5s;  
     animation-fill-mode: forwards;
     
   }
 
 
-#div4 {animation-timing-function: ease-out;}
-
 @keyframes mymove {
-  from {left: 150px;}
-  to {left: 570px;}
+  from {left: 0px;}
+  to {left: 670px;}
 }
 .newsletterbox{
   width: 600px;

@@ -9,19 +9,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Little Leaf</title>
 <link rel="stylesheet" href="./style.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="./picturs/mainicon.png">
 </head>
 
 
 
-<body>
+<body id="top">
 
 
 <div class="main">
-  <div class="header" id="top">
+  <div class="header" >
 
     <div class="right">
+      <span style="font-size:30px;cursor:pointer; margin-right: 10px;" onclick="openNav()">&#9776;</span>
     <img src="./picturs/sh.png" alt="logo" width="50px"> 
        
     </div>
@@ -30,7 +31,7 @@
   </div>
         </div>
 
-    <div class="sidenav">
+    <!-- <div class="sidenav">
         <h2>Menu</h2>
         <a href="#aboutus">About Us</a>
         <button class="dropdown-btn">Plants 
@@ -39,13 +40,41 @@
         <div class="dropdown-container">
           <a href="./climbers.html">Climbers</a>
           <a href="./BulbPlants.html">Bulb Plants</a>
-          <a href="./cactus.html">Cactus plants</a>
-          <a href="./flower.html">Flowers</a>
+          <a href="./Succulents.html">Succulents</a>
+          <a href="./Flowers.html">Flowers</a>
         </div>
-        <a href="./supplies.html">Supplies</a>
-        <a href="">Contact Us</a>
+       
+        <button class="dropdown-btn">Contact Us 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <h4>Contact us <br> on littleleaf@gmail.com <br>
+            Or <br> DM us on any of our platforms @littleleaf.kw</h4>
       </div>
-      
+       <a href="./supplies.html">Supplies</a>
+      </div> -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#aboutus">About Us</a>
+        <button class="dropdown-btn">Plants 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="./climbers.html">Climbers</a>
+          <a href="./BulbPlants.html">Bulb Plants</a>
+          <a href="./Succulents.html">Succulents</a>
+          <a href="./Flowers.html">Flowers</a>
+        </div>
+        <button class="dropdown-btn">Contact Us 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <h4>Contact us <br> on littleleaf@gmail.com <br>
+            Or <br> DM us on any of our platforms @littleleaf.kw</h4>
+      </div>
+      <a href="./supplies.html">Supplies</a>
+      </div>
+      <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Manu</span> -->
       <div class="main">
        
       </div>
